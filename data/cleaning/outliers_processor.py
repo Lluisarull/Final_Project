@@ -1,15 +1,3 @@
-def clearNA_from_column(df, list_of_columns):
-    # Remove those rows that contain NaN values in the columns: age, gender, ethnicity
-    return df.dropna(subset=list_of_columns, how="any")
-
-
-def fillNA(df, list_of_columns):
-    # Fill NaN with the mean value of the column in the columns: height, weight.
-    for column in list_of_columns:
-        mean = df[column].mean()
-        df[column] = df[column].fillna(mean)
-    return df
-
 def check_outliers_IQM(df, vars_without_outliers):
   """Finds outliers with interquartile methodIt gets the df and a list of variables that dont 
   have outliers (categorical and binary vars) and returns a dictionary with the total number of outliers
