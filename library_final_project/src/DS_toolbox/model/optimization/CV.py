@@ -36,7 +36,6 @@ def CV_model(X , y, kf, model, metric, the_greater_the_better = True):
 
         X_train, X_test = np.matrix(X)[train_index], np.matrix(X)[test_index]
         y_train, y_test = np.array(y)[train_index], np.array(y)[test_index]
-        print(len(y_train))
         model.fit(X_train, y_train)
         
         y_pred = model.predict(X_test)

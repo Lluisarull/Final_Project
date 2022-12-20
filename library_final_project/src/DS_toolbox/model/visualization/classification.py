@@ -2,7 +2,7 @@ import matplotlib as plt
 import seaborn as sns 
 from sklearn.metrics import confusion_matrix
 
-def conf_mat(y_test, predictions):
+def binary_conf_mat(y_test, predictions):
     """
     This function creates a confusion matrix of the model.
     Parameters:
