@@ -11,7 +11,7 @@ def tuning(model, random_grid, scoring, X, y):
     - random_grid: grid of values for RandomizedSearch to try. Look at sklearn RandomizedSearchCV for more info
     - scoring: str score identifier from sklearn to optimize the hyperparameters
     - y: real target values
-    - X: X training data
+    - X: features
     
     Returns:
     - model tuned with best hyperparameters and best split from kfold

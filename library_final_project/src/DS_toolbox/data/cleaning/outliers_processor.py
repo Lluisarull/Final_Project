@@ -1,3 +1,5 @@
+import numpy as np
+
 def check_outliers_IQM(df, vars_without_outliers):
   """This function finds outliers using the interquartile method.
 
@@ -38,7 +40,8 @@ def check_outliers_std_dev(df, vars_without_outliers):
    
   Returns:
   ----------
-  It returns a dictionary with the total number of outliers and the index of them for each var that HAS outliers  """  
+  It returns a dictionary with the total number of outliers and the index of them for each var that HAS outliers.
+  The index 0 corresponds to the outliers and the index 1 corresponds to the data frame once the outliers have been removed."""  
   
   df_no_out = df.copy()
   outliers = dict()

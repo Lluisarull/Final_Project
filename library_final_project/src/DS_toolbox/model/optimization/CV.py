@@ -7,7 +7,7 @@ def CV_model(X , y, kf, model, metric, the_greater_the_better = True):
     Parameters:
     --------------
     - y: real target values
-    - X: X training data
+    - X: features
     - kf: KFold object to split data
     - model: model to evaluate
     - metric: metric function from sklearn
@@ -21,6 +21,10 @@ def CV_model(X , y, kf, model, metric, the_greater_the_better = True):
     - mean of the chosen metric over all folds"""
 
     metrics_list = []
+    final_model = model
+    final_X_test = []
+    final_y_test = []
+    final_y_pred = []
     
     if the_greater_the_better:
         best_metric = 0
@@ -32,6 +36,7 @@ def CV_model(X , y, kf, model, metric, the_greater_the_better = True):
 
         X_train, X_test = np.matrix(X)[train_index], np.matrix(X)[test_index]
         y_train, y_test = np.array(y)[train_index], np.array(y)[test_index]
+        print(len(y_train))
         model.fit(X_train, y_train)
         
         y_pred = model.predict(X_test)

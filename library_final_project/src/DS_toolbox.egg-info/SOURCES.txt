@@ -10,6 +10,8 @@ src/DS_toolbox/data/__init__.py
 src/DS_toolbox/data/cleaning/__init__.py
 src/DS_toolbox/data/cleaning/nan_manager.py
 src/DS_toolbox/data/cleaning/outliers_processor.py
+src/DS_toolbox/data/creation/__init__.py
+src/DS_toolbox/data/creation/interaction.py
 src/DS_toolbox/data/preparation/__init__.py
 src/DS_toolbox/data/preparation/standardization.py
 src/DS_toolbox/data/transformation/__init__.py
