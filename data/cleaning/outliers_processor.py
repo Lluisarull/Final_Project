@@ -1,8 +1,14 @@
 def check_outliers_IQM(df, vars_without_outliers):
-  """Finds outliers with interquartile methodIt gets the df and a list of variables that dont 
-  have outliers (categorical and binary vars) and returns a dictionary with the total number of outliers
-  and the index of them for each var that HAS outliers
-  """
+  """This function finds outliers using the interquartile method.
+
+  Parameters
+  ----------
+  vars_without_outliers = list of variables that dont have outliers (categorical and binary vars)
+   
+  Returns:
+  ----------
+  It returns a dictionary with the total number of outliers and the index of them for each var that HAS outliers  """  
+  
   outliers = dict()
   for column in df.columns:
     if column in vars_without_outliers:
@@ -24,11 +30,17 @@ def check_outliers_IQM(df, vars_without_outliers):
   return outliers, df_no_out
 
 def check_outliers_std_dev(df, vars_without_outliers):
+  """This function finds outliers using the standard deviation method.
+
+  Parameters
+  ----------
+  vars_without_outliers = list of variables that dont have outliers (categorical and binary vars)
+   
+  Returns:
+  ----------
+  It returns a dictionary with the total number of outliers and the index of them for each var that HAS outliers  """  
+  
   df_no_out = df.copy()
-  """Finds outliers with std dev method.It gets the df and a list of variables that dont 
-  have outliers (categorical and binary vars) and returns a dictionary with the total number of outliers
-  and the index of them for each var that HAS outliers
-  """
   outliers = dict()
   for column in df.columns:
     if column in vars_without_outliers:
