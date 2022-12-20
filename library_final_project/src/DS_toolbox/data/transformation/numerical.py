@@ -1,4 +1,3 @@
-
 def log_transformation(df, list_of_columns):
     """This function carries out a Log transformation of continuous variables
     

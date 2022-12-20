@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: DS-toolbox
+Version: 0.0.1
+Summary: This library aims to provide tools for the end-to-end pipeline development in machine learning projects
+Home-page: UNKNOWN
+Author: Maria Pintos, Javier Roset, Lluisa Rull
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.9.12
