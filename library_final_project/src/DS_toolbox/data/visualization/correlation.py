@@ -1,9 +1,11 @@
 import seaborn as sns
 import matplotlib.pyplot as plt
 
+
 def correlation_matrix(df):
-    """Calculate and plot the correlation matrix for all the numerical variables in the data frame
-     
+    """Calculate and plot the correlation matrix for all the numerical
+    variables in the data frame
+
      Parameters
      ----------
      df =  Input DataFrame
@@ -12,13 +14,15 @@ def correlation_matrix(df):
      ----------
      corr = Correlation matrix for the input DataFrame."""
 
-    ax = plt.figure(figsize=(12,10))
-    sns.heatmap(df.corr(),annot=True,cmap="Blues", fmt='.0%')
+    ax = plt.figure(figsize=(12, 10))
+    sns.heatmap(df.corr(), annot=True, cmap="Blues", fmt='.0%')
     plt.show()
 
+
 def big_panel(df, target):
-    """Shows the correlations between all the variables of the dataset indicating the target in red
-     
+    """Shows the correlations between all the variables of the dataset
+    indicating the target in red
+
      Parameters
      ----------
      df =  Input DataFrame
@@ -27,5 +31,5 @@ def big_panel(df, target):
      Returns
      ----------
      corr = Correlation matrix for the input DataFrame."""
-    sns.set(style = "ticks")
+    sns.set(style="ticks")
     sns.pairplot(df, hue=target)

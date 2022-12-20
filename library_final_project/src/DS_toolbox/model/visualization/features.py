@@ -1,9 +1,11 @@
 import matplotlib as plt
 import pandas as pd
 
+
 def plot_feats(model, X):
     """
-    This function creates a bar plot of the importance of the features of the model sorted.
+    This function creates a bar plot of the importance of the features of the
+    model sorted.
     Parameters:
     --------------
     - model: model
@@ -13,8 +15,8 @@ def plot_feats(model, X):
 
     features = X.columns
 
-    importances_clf = pd.Series(data = model.feature_importances_,
-                                index= features)
+    importances_clf = pd.Series(data=model.feature_importances_,
+                                index=features)
 
     # Sort importances
     importances_sorted_clf = importances_clf.sort_values()

@@ -1,7 +1,7 @@
 def evaluate_on_metrics(predictions, y_test, metrics_dict):
     """
-    It receives predictions, real values and a group of metrics to evaluate the model 
-    and returns a dict of metrics with their evaluated value.
+    It receives predictions, real values and a group of metrics to evaluate
+    the model and returns a dict of metrics with their evaluated value.
     Parameters:
     --------------
     - predictions: vector of predictions

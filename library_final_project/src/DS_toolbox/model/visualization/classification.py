@@ -1,6 +1,7 @@
 import matplotlib as plt
-import seaborn as sns 
+import seaborn as sns
 from sklearn.metrics import confusion_matrix
+
 
 def binary_conf_mat(y_test, predictions):
     """
@@ -10,9 +11,8 @@ def binary_conf_mat(y_test, predictions):
     - y_test: real target values
     - predictions: predictions of the target by the model
     """
-    cm = confusion_matrix(y_test, predictions, labels=[0,1])
-    plt.figure(figsize=(10,7))
-    sns.heatmap(cm, cmap="Blues", annot = True)
+    cm = confusion_matrix(y_test, predictions, labels=[0, 1])
+    plt.figure(figsize=(10, 7))
+    sns.heatmap(cm, cmap="Blues", annot=True)
     plt.xlabel('Predicted')
     plt.ylabel('True')
-    
