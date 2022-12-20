@@ -13,7 +13,7 @@ def OneHotEncoding(df, list_of_columns):
     This function returns as output the data frame including every specified categorical variable in list_of_columns as a new column
     for every category coded in binary (1 for being in the corresponding category and 0 otherwise). """
     
-    return pd.get_dummies(df, columns=list_of_columns, drop_first=True)
+    return pd.get_dummies(df, columns=list_of_columns, drop_first=False)
 
 
 def binary_var(df, column, labels):

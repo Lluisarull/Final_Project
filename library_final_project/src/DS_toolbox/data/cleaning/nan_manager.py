@@ -12,7 +12,7 @@ def clearNA_from_column(df, list_of_columns):
    return df.dropna(subset=list_of_columns, how="any")
 
 
-def fillNA(df, list_of_columns):
+def fillNA_mean(df, list_of_columns):
     """ This function fills NAs imputing the missing values of certain columns in a data frame with the computed mean 
     of the rest of the existing values in the column in question
     
