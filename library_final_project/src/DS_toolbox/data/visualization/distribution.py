@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+"""Utility for visualizing data distribution"""
 
 
 def density_histogram(data, bins, density=True):

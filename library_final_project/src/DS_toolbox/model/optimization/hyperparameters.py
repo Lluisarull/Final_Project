@@ -1,4 +1,5 @@
 from sklearn.model_selection import RandomizedSearchCV
+"""Utility for hyperparameter tunning of the model"""
 
 
 def tuning(model, random_grid, scoring, X, y):

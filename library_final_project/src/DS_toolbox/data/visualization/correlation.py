@@ -1,5 +1,6 @@
 import seaborn as sns
 import matplotlib.pyplot as plt
+"""Utility for different types of correlation visualization of the data"""
 
 
 def correlation_matrix(df):

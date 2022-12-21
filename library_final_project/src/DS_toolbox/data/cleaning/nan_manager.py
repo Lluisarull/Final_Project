@@ -1,9 +1,13 @@
+"""Utility for cleaning and managing NaNs of the database"""
+
+
 def clearNA_from_column(df, list_of_columns):
     """ This function drops NaNs of a certain columns in a data frame
 
     Parameters
     ----------
-    list_of_columns=  column for which we wish to remove NaNs
+    df = dataframe to clear
+    list_of_columns = list of column names for which we wish to remove NaNs
 
     Returns:
     ----------
@@ -14,12 +18,13 @@ def clearNA_from_column(df, list_of_columns):
 
 def fillNA_mean(df, list_of_columns):
     """ This function fills NAs imputing the missing values of certain columns
-    in a data frame with the computed mean of the rest of the existing 
+    in a data frame with the computed mean of the rest of the existing
     values in the column in question
 
     Parameters
     ----------
-    list_of_columns=  column for which we wish to fill NaNs
+    df = dataframe to fill
+    list_of_columns = list of column names for which we wish to fill NaNs
 
     Returns:
     ----------

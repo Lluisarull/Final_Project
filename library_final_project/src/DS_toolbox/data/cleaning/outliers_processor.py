@@ -1,4 +1,5 @@
 import numpy as np
+"""Utility for managing and detecting outliers of the database"""
 
 
 def check_outliers_IQM(df, vars_without_outliers):

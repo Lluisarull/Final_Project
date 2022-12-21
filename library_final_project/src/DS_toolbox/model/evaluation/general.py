@@ -1,3 +1,7 @@
+"""Utility for all the possible metrics created. here the common tools will
+be defined."""
+
+
 def evaluate_on_metrics(predictions, y_test, metrics_dict):
     """
     It receives predictions, real values and a group of metrics to evaluate

@@ -1,5 +1,6 @@
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
+"""Utility for standardizing the database"""
 
 
 def careful_standardization(df, not_standardize_list):

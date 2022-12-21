@@ -1,5 +1,6 @@
 import seaborn as sns
 import matplotlib.pyplot as plt
+"""Utility for visualizing data outliers"""
 
 
 def outliers_printer(df, list_of_columns):

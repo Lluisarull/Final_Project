@@ -1,4 +1,6 @@
 import pandas as pd
+"""Utility for transforming categorical variables into processable
+variables for the model"""
 
 
 def OneHotEncoding(df, list_of_columns):

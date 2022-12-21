@@ -1,4 +1,5 @@
 import numpy as np
+"""Utility for cross validation implementation"""
 
 
 def CV_model(X, y, kf, model, metric, the_greater_the_better=True):

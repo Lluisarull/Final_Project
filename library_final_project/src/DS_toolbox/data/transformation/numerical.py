@@ -1,4 +1,5 @@
 import numpy as np
+"""Utility for doing transformation to continuous numerical variables"""
 
 
 def log_transformation(df, list_of_columns):

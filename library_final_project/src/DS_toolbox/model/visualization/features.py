@@ -1,5 +1,6 @@
 import matplotlib as plt
 import pandas as pd
+"""Utility for visualizations of the model features"""
 
 
 def plot_feats(model, X):

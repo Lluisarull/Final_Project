@@ -1,5 +1,7 @@
 import pandas as pd
 from sklearn.preprocessing import PolynomialFeatures
+"""Utility for creating new variables related to the interaction of the
+existing ones of the database"""
 
 
 def poly_feature_creation(df_scaled,

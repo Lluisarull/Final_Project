@@ -1,6 +1,7 @@
 import matplotlib as plt
 import seaborn as sns
 from sklearn.metrics import confusion_matrix
+"""Utility visualizations of classification models"""
 
 
 def binary_conf_mat(y_test, predictions):
