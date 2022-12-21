@@ -1,1 +1,0 @@
-This library aims to provide some tools for solving Homework 5 of Computing for Data Science
